@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Validate</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="card shadow-lg">
+                    <div class="card-header text-center">
+                        </h6><strong>JQUERRY REVISION</strong></div>
+                    <div class="card-body">
+                        <form action="#">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" id="user" placeholder="Username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Age</label>
+                                <input type="text" id="age" placeholder="Age" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Nickname</label>
+                                <input type="text" id="nickname" placeholder="nickname" class="form-control">
+                            </div>
+                            <button type="button" class="btn btn-success float-right">submit</button>
+                            <br>
+                            <div class="card bg-success text-white mt-5" style="display:none;">
+                                <div class="card-body ">
+                                    <p id="p1">Success</p>
+                                </div>
+                            </div>
+                            <div class="card bg-danger text-white mt-5" style="display:none;">
+                                <div class="card-body">
+                                    <p id="result">
+                                        Error: <br>
+                                        -  Name is empty<br>
+                                        -   Age shall be a number <br>
+                                        -   Nickname shall  contain one upper<br>
+                                            case char  
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/validate.js"></script>
+</body>
+</html>
